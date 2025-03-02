@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ResolveIt - Anonymous Complaint Form</title>
+</head>
+<body>
+    <header>
+        <h1>Register Your Anonymous Complaint</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register Complaint</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="track.html">Track Status</a></li>
+                <li><a href="office-select.html">Upload Application</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="anonymous-complaint-form">
+        <h2>Register Your Anonymous Complaint</h2>
+<form id="anonymousComplaintForm">
+    <div class="form-group">
+        <label for="problem-type">Problem Type:</label>
+        <select id="problem-type" name="problem-type" required>
+            <option value="">Select Problem Type</option>
+            <option value="academic">Academic</option>
+            <option value="infrastructure">Infrastructure</option>
+            <option value="harassment">Harassment/Ragging</option>
+            <option value="fees">Fees Related</option>
+            <option value="transportation">Transportation</option>
+            <option value="hostel">Hostel</option>
+        </select>
+    </div>
+
+            <div class="form-group">
+                <label for="problem-type">Problem Type:</label>
+                <select id="problem-type" name="problem-type" required>
+                    <option value="">Select Problem Type</option>
+                    <option value="academic">Academic</option>
+                    <option value="infrastructure">Infrastructure</option>
+                    <option value="harassment">Harassment/Ragging</option>
+                    <option value="fees">Fees Related</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="hostel">Hostel</option>
+                </select>
+            </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+    </div>
+
+            <button type="submit" class="submit-button">Submit Anonymous Complaint</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us: info@resolveit.com</p>
+    </footer>
+</body>
+</html>

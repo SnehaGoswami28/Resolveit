@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ResolveIt - Register Complaint</title>
+    <style>
+        .subject-item.box {
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .subject-item.box:hover {
+            background-color: #e2e6ea;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Register Your Complaint</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register Complaint</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="track.html">Track Status</a></li>
+                <li><a href="office-select.html">Upload Application</a></li>
+                <li><a href="register.html">Anonymous Complaint</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="problem-subjects">
+        <h2>Select a Problem Subject</h2>
+        <ul>
+<div class="subject-item box" onclick="window.location.href='academic-complaint-form.html'">Academic</div>
+
+<div class="subject-item box" onclick="window.location.href='infrastructure-complaint-form.html'">Infrastructure</div>
+
+<div class="subject-item box" onclick="window.location.href='complaint-form.html?subject=harassment'">Harassment/Ragging</div>
+<div class="subject-item box" onclick="window.location.href='complaint-form.html?subject=fees'">Fees Related</div>
+<div class="subject-item box" onclick="window.location.href='complaint-form.html?subject=transportation'">Transportation</div>
+<div class="subject-item box" onclick="window.location.href='complaint-form.html?subject=hostel'">Hostel</div>
+
+        </ul>
+    </section>
+    <section id="complaint-form" style="display: none;">
+        <h2>Register Your Complaint</h2>
+<form id="anonymousComplaintForm">
+
+            <div class="form-group">
+                <label for="problem-type">Problem Type:</label>
+                <select id="problem-type" name="problem-type" required>
+
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+            </div>
+            <div class="form-group">
+                <label for="Department"> Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Department</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Business">Business</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="Law">Law</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Problem Subject"> Problem Subject:</label>
+                <select id="problem subject" name="problem subject" required>
+                    <option value="">Problem Subject</option>
+                    <option value="academic">Academic</option>
+                    <option value="infrastructure">Infrastructure</option>
+                    <option value="harassment">Harassment/Ragging</option>
+                    <option value="fees">Fees Related</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="IT & Technical Support">IT & Technical Support</option>
+                    <option value="Hostel">Hostel</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="complaint">Complaint Details:</label>
+                <textarea id="complaint" name="complaint" rows="5" required></textarea>
+            </div>
+                <button type="submit" class="submit-button">Submit Anonymous Complaint</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us: info@resolveit.com</p>
+    </footer>
+
+    <script>
+        function showForm(subject) {
+            document.getElementById('complaint-form').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

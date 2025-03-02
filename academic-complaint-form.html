@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ResolveIt - Academic Complaint Form</title>
+</head>
+<body>
+    <header>
+        <h1>Register Your Academic Complaint</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register Complaint</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="track.html">Track Status</a></li>
+                <li><a href="office-select.html">Upload Application</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="academic-complaint-form">
+        <h2>Register Your Academic Complaint</h2>
+        <form id="academicComplaintForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Department</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Business">Business</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="Law">Law</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="problem-type">Problem Type:</label>
+                <select id="problem-type" name="problem-type" required>
+                    <option value="">Select Problem Type</option>
+                    <option value="grading">Grading Issues</option>
+                    <option value="course-content">Course Content Issues</option>
+                    <option value="faculty">Faculty Issues</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit Complaint</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us: info@resolveit.com</p>
+    </footer>
+</body>
+</html>
